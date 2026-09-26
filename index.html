@@ -20,13 +20,13 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 
 /* V5 SECTION COLOR SYSTEM */
 body{background:var(--bg)}
-#about{background:linear-gradient(180deg,#ffffff 0%,#f7f2ff 100%)}
-#services{background:linear-gradient(135deg,#f1ebff 0%,#eef5ff 100%)}
-#process{background:linear-gradient(180deg,#eff6ff 0%,#f6f1ff 100%)}
-#why{background:linear-gradient(135deg,#e9ddff 0%,#e1efff 100%)}
-#team{background:linear-gradient(135deg,#f7f2ff 0%,#eef6ff 100%)}
-#faq{background:linear-gradient(180deg,#eee7ff 0%,#f4f8ff 100%)}
-#contact{background:linear-gradient(135deg,#e3d7ff 0%,#dcecff 100%)}
+#about{background:transparent}
+#services{background:transparent}
+#process{background:transparent}
+#why{background:transparent}
+#team{background:transparent}
+#faq{background:transparent}
+#contact{background:transparent}
 #services .card,#process .step,#team .person,#faq details,#contact .contact-card{background:rgba(255,255,255,.78);backdrop-filter:blur(10px)}
 #services .plans{margin-top:40px}
 #services .card{box-shadow:0 18px 50px rgba(76,56,140,.10)}
@@ -34,6 +34,81 @@ body{background:var(--bg)}
 #team .person{box-shadow:0 14px 35px rgba(124,58,237,.08)}
 #faq details{box-shadow:0 10px 30px rgba(37,99,235,.07)}
 .section h2{letter-spacing:-1px}
+
+/* AMARZ V6 — continuous lavender + blue + white background */
+body{
+  background:
+    radial-gradient(ellipse 70% 45% at 8% 5%,rgba(167,139,250,.48),transparent 68%),
+    radial-gradient(ellipse 65% 48% at 92% 10%,rgba(59,130,246,.42),transparent 70%),
+    radial-gradient(ellipse 75% 55% at 50% 42%,rgba(255,255,255,.94),transparent 72%),
+    radial-gradient(ellipse 65% 55% at 12% 76%,rgba(139,92,246,.34),transparent 70%),
+    radial-gradient(ellipse 65% 52% at 90% 82%,rgba(37,99,235,.30),transparent 70%),
+    linear-gradient(125deg,#dcd2ff 0%,#f8faff 32%,#dfeaff 58%,#f1eaff 82%,#d8e6ff 100%);
+  background-attachment:fixed;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    radial-gradient(circle at 20% 35%,rgba(124,58,237,.12),transparent 23%),
+    radial-gradient(circle at 78% 55%,rgba(37,99,235,.13),transparent 25%);
+  filter:blur(24px);
+}
+nav{
+  background:rgba(255,255,255,.58)!important;
+  border-bottom:1px solid rgba(255,255,255,.65);
+}
+.hero,.section{
+  background:transparent!important;
+}
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+}
+.hero:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 78% 35%,rgba(37,99,235,.20),transparent 28%),
+    radial-gradient(circle at 12% 70%,rgba(124,58,237,.17),transparent 30%);
+}
+.card,.step,.person,.faq details,.contact-card{
+  background:rgba(255,255,255,.48)!important;
+  border:1px solid rgba(255,255,255,.72)!important;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(65,45,140,.10);
+}
+.plans .card:nth-child(2){
+  background:linear-gradient(145deg,rgba(237,231,255,.78),rgba(224,239,255,.68))!important;
+}
+.feature{
+  background:linear-gradient(135deg,rgba(237,228,255,.72),rgba(218,235,255,.65),rgba(255,255,255,.55))!important;
+  backdrop-filter:blur(18px);
+}
+.cta{
+  background:linear-gradient(115deg,rgba(109,40,217,.95),rgba(37,99,235,.94),rgba(124,58,237,.94))!important;
+  box-shadow:0 25px 70px rgba(37,55,150,.22);
+}
+.pill{
+  background:rgba(255,255,255,.54)!important;
+  backdrop-filter:blur(12px);
+}
+footer{
+  background:rgba(255,255,255,.30);
+  backdrop-filter:blur(12px);
+}
+@media(max-width:900px){
+  body{background-attachment:scroll}
+}
+.dark body{}
+.dark nav{background:rgba(10,12,22,.72)!important;border-bottom-color:rgba(255,255,255,.08)}
+.dark .hero,.dark .section{background:transparent!important}
+.dark .card,.dark .step,.dark .person,.dark .faq details,.dark .contact-card{
+  background:rgba(20,23,34,.55)!important;
+  border-color:rgba(167,139,250,.16)!important;
+}
+.dark .feature{background:linear-gradient(135deg,rgba(49,32,82,.62),rgba(19,40,78,.60),rgba(20,23,34,.55))!important}
 </style></head>
 <body>
 <nav><div class="wrap nav"><a class="logo" href="#home">AMARZ <span>MARKETING & PR</span></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#why">Why AMARZ</a><a href="#team">Team</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><button onclick="document.body.classList.toggle('dark')">◐</button></div></nav>
@@ -88,5 +163,80 @@ background:linear-gradient(135deg,#0b0d14 0%,#151021 100%);
 background:rgba(20,23,34,.92);color:var(--text);
 }
 .dark .hero{background:radial-gradient(circle at 80% 20%,#31205f 0%,transparent 34%),linear-gradient(135deg,#0b0d14,#121a2b)}
+
+/* AMARZ V6 — continuous lavender + blue + white background */
+body{
+  background:
+    radial-gradient(ellipse 70% 45% at 8% 5%,rgba(167,139,250,.48),transparent 68%),
+    radial-gradient(ellipse 65% 48% at 92% 10%,rgba(59,130,246,.42),transparent 70%),
+    radial-gradient(ellipse 75% 55% at 50% 42%,rgba(255,255,255,.94),transparent 72%),
+    radial-gradient(ellipse 65% 55% at 12% 76%,rgba(139,92,246,.34),transparent 70%),
+    radial-gradient(ellipse 65% 52% at 90% 82%,rgba(37,99,235,.30),transparent 70%),
+    linear-gradient(125deg,#dcd2ff 0%,#f8faff 32%,#dfeaff 58%,#f1eaff 82%,#d8e6ff 100%);
+  background-attachment:fixed;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    radial-gradient(circle at 20% 35%,rgba(124,58,237,.12),transparent 23%),
+    radial-gradient(circle at 78% 55%,rgba(37,99,235,.13),transparent 25%);
+  filter:blur(24px);
+}
+nav{
+  background:rgba(255,255,255,.58)!important;
+  border-bottom:1px solid rgba(255,255,255,.65);
+}
+.hero,.section{
+  background:transparent!important;
+}
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+}
+.hero:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 78% 35%,rgba(37,99,235,.20),transparent 28%),
+    radial-gradient(circle at 12% 70%,rgba(124,58,237,.17),transparent 30%);
+}
+.card,.step,.person,.faq details,.contact-card{
+  background:rgba(255,255,255,.48)!important;
+  border:1px solid rgba(255,255,255,.72)!important;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(65,45,140,.10);
+}
+.plans .card:nth-child(2){
+  background:linear-gradient(145deg,rgba(237,231,255,.78),rgba(224,239,255,.68))!important;
+}
+.feature{
+  background:linear-gradient(135deg,rgba(237,228,255,.72),rgba(218,235,255,.65),rgba(255,255,255,.55))!important;
+  backdrop-filter:blur(18px);
+}
+.cta{
+  background:linear-gradient(115deg,rgba(109,40,217,.95),rgba(37,99,235,.94),rgba(124,58,237,.94))!important;
+  box-shadow:0 25px 70px rgba(37,55,150,.22);
+}
+.pill{
+  background:rgba(255,255,255,.54)!important;
+  backdrop-filter:blur(12px);
+}
+footer{
+  background:rgba(255,255,255,.30);
+  backdrop-filter:blur(12px);
+}
+@media(max-width:900px){
+  body{background-attachment:scroll}
+}
+.dark body{}
+.dark nav{background:rgba(10,12,22,.72)!important;border-bottom-color:rgba(255,255,255,.08)}
+.dark .hero,.dark .section{background:transparent!important}
+.dark .card,.dark .step,.dark .person,.dark .faq details,.dark .contact-card{
+  background:rgba(20,23,34,.55)!important;
+  border-color:rgba(167,139,250,.16)!important;
+}
+.dark .feature{background:linear-gradient(135deg,rgba(49,32,82,.62),rgba(19,40,78,.60),rgba(20,23,34,.55))!important}
 </style>
 </body></html>
