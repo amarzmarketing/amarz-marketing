@@ -196,6 +196,44 @@ footer{background:rgba(255,255,255,.28)!important;border-top:1px solid rgba(255,
 .dark nav{background:rgba(13,17,35,.72)!important;border-color:rgba(255,255,255,.10)!important}
 .dark .card,.dark .step,.dark .person,.dark .faq details,.dark .contact-card,.dark .hero-visual{background:rgba(19,25,48,.66)!important;border-color:rgba(167,139,250,.16)!important}
 .dark .btn{background:rgba(20,27,52,.72)!important;color:#f8fafc!important}
+
+/* AMARZ V8 — fix gradient text rendering */
+.grad{
+  display:inline!important;
+  padding:0!important;
+  margin:0!important;
+  background:linear-gradient(90deg,#7c3aed 0%,#2563eb 48%,#06b6d4 100%)!important;
+  background-image:linear-gradient(90deg,#7c3aed 0%,#2563eb 48%,#06b6d4 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  color:transparent!important;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+.hero h1 .grad,
+.section h2 .grad{
+  display:inline!important;
+  line-height:inherit!important;
+  font-size:inherit!important;
+}
+.hero h1{
+  max-width:900px!important;
+  text-wrap:balance;
+}
+.hero h1 .grad{
+  white-space:normal!important;
+}
+/* keep the bright visual system, but add depth without turning the page dark */
+body{
+  background:
+    radial-gradient(760px 540px at 3% 8%,rgba(139,92,246,.42),transparent 68%),
+    radial-gradient(720px 540px at 97% 10%,rgba(37,99,235,.34),transparent 68%),
+    radial-gradient(900px 680px at 50% 38%,rgba(255,255,255,.92),transparent 70%),
+    radial-gradient(680px 520px at 10% 82%,rgba(217,70,239,.18),transparent 70%),
+    radial-gradient(700px 520px at 92% 82%,rgba(56,189,248,.22),transparent 70%),
+    linear-gradient(135deg,#dfe5ff 0%,#fafbff 38%,#e9e0ff 68%,#dcecff 100%)!important;
+}
 </style></head>
 <body>
 <nav><div class="wrap nav"><a class="logo" href="#home">AMARZ <span>MARKETING & PR</span></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#why">Why AMARZ</a><a href="#team">Team</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><button onclick="document.body.classList.toggle('dark')">◐</button></div></nav>
@@ -412,5 +450,43 @@ footer{background:rgba(255,255,255,.28)!important;border-top:1px solid rgba(255,
 .dark nav{background:rgba(13,17,35,.72)!important;border-color:rgba(255,255,255,.10)!important}
 .dark .card,.dark .step,.dark .person,.dark .faq details,.dark .contact-card,.dark .hero-visual{background:rgba(19,25,48,.66)!important;border-color:rgba(167,139,250,.16)!important}
 .dark .btn{background:rgba(20,27,52,.72)!important;color:#f8fafc!important}
+
+/* AMARZ V8 — fix gradient text rendering */
+.grad{
+  display:inline!important;
+  padding:0!important;
+  margin:0!important;
+  background:linear-gradient(90deg,#7c3aed 0%,#2563eb 48%,#06b6d4 100%)!important;
+  background-image:linear-gradient(90deg,#7c3aed 0%,#2563eb 48%,#06b6d4 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  color:transparent!important;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+.hero h1 .grad,
+.section h2 .grad{
+  display:inline!important;
+  line-height:inherit!important;
+  font-size:inherit!important;
+}
+.hero h1{
+  max-width:900px!important;
+  text-wrap:balance;
+}
+.hero h1 .grad{
+  white-space:normal!important;
+}
+/* keep the bright visual system, but add depth without turning the page dark */
+body{
+  background:
+    radial-gradient(760px 540px at 3% 8%,rgba(139,92,246,.42),transparent 68%),
+    radial-gradient(720px 540px at 97% 10%,rgba(37,99,235,.34),transparent 68%),
+    radial-gradient(900px 680px at 50% 38%,rgba(255,255,255,.92),transparent 70%),
+    radial-gradient(680px 520px at 10% 82%,rgba(217,70,239,.18),transparent 70%),
+    radial-gradient(700px 520px at 92% 82%,rgba(56,189,248,.22),transparent 70%),
+    linear-gradient(135deg,#dfe5ff 0%,#fafbff 38%,#e9e0ff 68%,#dcecff 100%)!important;
+}
 </style>
 </body></html>
